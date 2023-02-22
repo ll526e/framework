@@ -8,10 +8,6 @@ const route: RouteObject[] = [
     element: <HomeWrap />
   },
   {
-    path: '/home',
-    element: <HomeWrap />
-  },
-  {
     path: '/web',
     element: <WebWrap />
   }
