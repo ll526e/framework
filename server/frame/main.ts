@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from '@module/app';
+import { AppModule } from '@module';
 import { HttpInterceptor } from '@interceptor/http.interceptor';
 import { HttpFilter } from "@filter/http.filter";
 

@@ -21,17 +21,32 @@
       "@controller/*": [
         "frame/controllers/*"
       ],
+      "@controller": [
+        "frame/controllers"
+      ],
       "@module/*": [
         "frame/modules/*"
+      ],
+      "@module": [
+        "frame/modules"
       ],
       "@service/*": [
         "frame/services/*"
       ],
+      "@service": [
+        "frame/services"
+      ],
       "@interceptor/*": [
         "frame/interceptors/*"
       ],
+      "@interceptor": [
+        "frame/interceptors"
+      ],
       "@filter/*": [
         "frame/filters/*"
+      ],
+      "@filter": [
+        "frame/filters"
       ],
     }
   },
