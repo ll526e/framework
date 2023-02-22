@@ -16,11 +16,21 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@controller/*": [
+        "frame/controllers/*"
+      ],
+      "@module/*": [
+        "frame/modules/*"
+      ],
+      "@service/*": [
+        "frame/services/*"
+      ],
+    }
   },
   "exclude": [
     "node_modules",
-    "test",
     "run",
     "**/*spec.ts"
   ]
