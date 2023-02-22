@@ -1,5 +1,5 @@
 import { RouteObject } from 'react-router-dom'
-import HomeWrap from '~/frame/layout/home'
+import HomeWrap from '@layout/home'
 import WebWrap from '@layout/web'
 
 const route: RouteObject[] = [
