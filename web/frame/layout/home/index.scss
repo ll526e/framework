@@ -1,0 +1,17 @@
+.m-home {
+  position: relative;
+
+  .m-home-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .m-home-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+  }
+}
