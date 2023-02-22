@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
-const app_1 = require("../controllers/app");
-const app_2 = require("../services/app");
+const app_1 = require("../../controllers/app");
+const app_2 = require("../../services/app");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -20,4 +20,4 @@ AppModule = __decorate([
     })
 ], AppModule);
 exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+//# sourceMappingURL=index.js.map

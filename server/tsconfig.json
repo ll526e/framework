@@ -27,6 +27,12 @@
       "@service/*": [
         "frame/services/*"
       ],
+      "@interceptor/*": [
+        "frame/interceptors/*"
+      ],
+      "@filter/*": [
+        "frame/filters/*"
+      ],
     }
   },
   "exclude": [

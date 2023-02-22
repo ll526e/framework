@@ -6,18 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppModule = void 0;
+exports.HttpInterceptor = void 0;
 const common_1 = require("@nestjs/common");
-const app_1 = require("../controllers/app");
-const app_2 = require("../services/app");
-let AppModule = class AppModule {
+const operators_1 = require("rxjs/operators");
+let HttpInterceptor = class HttpInterceptor {
+    intercept(context, next) {
+        return next.handle().pipe((0, operators_1.map)(data => {
+            return {
+                data,
+                status: 1,
+                message: 'success',
+            };
+        }));
+    }
 };
-AppModule = __decorate([
-    (0, common_1.Module)({
-        imports: [],
-        controllers: [app_1.AppController],
-        providers: [app_2.AppService],
-    })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+HttpInterceptor = __decorate([
+    (0, common_1.Injectable)()
+], HttpInterceptor);
+exports.HttpInterceptor = HttpInterceptor;
+//# sourceMappingURL=http.interceptor.js.map
