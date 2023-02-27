@@ -1,0 +1,13 @@
+{
+  "name": "ll526e-framework",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev:server": "cd server && pnpm dev",
+    "dev:web": "cd web && pnpm dev",
+    "dev": "pnpm dev:server & pnpm dev:web",
+    "build:server": "cd server && pnpm build",
+    "build:web": "cd web && pnpm build",
+    "build": "pnpm build:server & pnpm build:web"
+  }
+}
