@@ -7,9 +7,9 @@ import { useConfig } from '@hook';
 @Injectable()
 export class DiscoverService {
   constructor(private readonly httpService: HttpService) { }
-  getMovie(): Observable<AxiosResponse<any[]>> {
-    const { url, key } = useConfig()
-    return this.httpService.get(`${url}/discover/movie?api_key=${key}&language=zh`).pipe(
+  getMovie(param): Observable<AxiosResponse<any[]>> {
+    const { url, params } = useConfig(param)
+    return this.httpService.get(`${url}/discover/movie`, { params }).pipe(
       map((res) => res.data),
     )
       .pipe(
