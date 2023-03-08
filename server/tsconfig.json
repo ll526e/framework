@@ -36,6 +36,12 @@
       "@service": [
         "frame/services"
       ],
+      "@hook/*": [
+        "frame/hooks/*"
+      ],
+      "@hook": [
+        "frame/hooks"
+      ],
       "@interceptor/*": [
         "frame/interceptors/*"
       ],

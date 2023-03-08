@@ -15,7 +15,9 @@ body,
 }
 
 .m-content {
-  min-height: calc(100% - $header-height - $footer-height);
+  height: calc(100% - $header-height - $footer-height);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 em,
