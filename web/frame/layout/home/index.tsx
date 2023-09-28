@@ -1,7 +1,7 @@
 import './index.scss'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-
+import { useFetch } from '@hooks'
 interface ListItem {
   title: string
   id: number
@@ -24,7 +24,7 @@ const HomeWrap = () => {
   }, [page])
 
   const fetch = () => {
-    axios.get('/api/discover/movie', { params: { page, language: 'zh-CN' } }).then(({ data }) => {
+    useFetch.get('/api/discover/movie', { params: { page, language: 'zh-CN' } }).then(({ data }) => {
       setList(data.results)
       setTotal(data.total_pages)
     })
