@@ -24,7 +24,7 @@ const HomeWrap = () => {
   }, [page])
 
   const fetch = () => {
-    axios.get('/api/discover/movie', { params: { page } }).then(({ data }) => {
+    axios.get('/api/discover/movie', { params: { page, language: 'zh-CN' } }).then(({ data }) => {
       setList(data.results)
       setTotal(data.total_pages)
     })
